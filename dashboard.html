@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            text-align:center;
+            margin-top:60px;
+        }
+
+        .container{
+            background:white;
+            width:450px;
+            margin:auto;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
+
+        input,select,button{
+            padding:10px;
+            margin:10px;
+            font-size:16px;
+        }
+
+        button{
+            cursor:pointer;
+        }
+
+        #result{
+            margin-top:20px;
+            color:green;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Live Currency Converter</h1>
+
+    <input
+        type="number"
+        id="amount"
+        placeholder="Enter Amount"
+    >
+
+    <br>
+
+    <select id="fromCurrency"></select>
+
+    <span>→</span>
+
+    <select id="toCurrency"></select>
+
+    <br>
+
+    <button id="convertBtn">Convert</button>
+
+    <h2 id="result"></h2>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
